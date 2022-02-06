@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!--REST API : GET < POST < PUT < DELETE-->
+    <!--GET: Fetch some data from backend i.e get some data from it -->
+    <!--POST: Send some new data to the database-->
+    <!--PUT: When you want to update to the database-->
+    <!--DELETE: When you want to delete something from the database-->
+    <!--We use CRUD -> CREATE(POST) < READ(GET) < UPDATE(PUT) < DELETE(Delete)-->
+    <h1>Forms in HTML</h1>
+    <form action="/actions.php" method="get">  <!--action="https://" -> External Api--> <!--action =" /actions.php" -> Local Api-->
+        <label for="name">Name: </label>
+        <input type="text" id="name" />
+        <label for="email">E-mail: </label>
+        <input type="text" id="email"/>
+        <label>Gender:</label>
+        Male<input type="checkbox" id="gender"/>Female<input type="checkbox" id="gender"/>
+        <label for="submit" >Submit </label>
+        <input type="submit" id="submit"/>
+    </form>
+</body>
+</html>
