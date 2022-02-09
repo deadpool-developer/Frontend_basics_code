@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1 title="title">Hover me to see my title</h1>
+
+    <!--When the form is submitted the browser search for the reader.html in local and send data in the url as:-->
+    <!--http://127.0.0.1:5500/Basics_of_html/reader.html?gender=on&eyeColor=green&bio=fefef&hi=-->
+    <!--http://127.0.0.1:5500/Basics_of_html/reader.html?email=aditya.1923it1006%40kiet.edu&gender=on&eyeColor=green&bio=df&hi=-->
+    <!--@ is changed into %40 because browser encode it in this form and work on it and also for security purpose-->
+    <!--This encoding and decoding is done to avoid SQL injection and Javascript Injection-->
+
+    <form action="reader.html" method="get">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div>
+        <label for="number">Number</label>
+        <input type="number" min="1" max="200" step="5" id="number" />
+      </div>
+
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" min="2019-06-10" />
+      </div>
+
+      <div>
+        <label>Favorite Fruit: </label>
+        <label for="banana">Banana</label>
+        <input type="checkbox" id="banana" value="banana" />
+        <label for="apple">Apple</label>
+        <input type="checkbox" id="apple" value="apple" />
+      </div>
+
+      <div>
+        <label>Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" />
+        <!--name is used for the backend which is sended to the url by the backend-->
+        <label for="female"> Female</label>
+        <input type="radio" id="female" name="gender" />
+      </div>
+
+      <div>
+        <label for="eyeColor">Eye Color: </label>
+        <select name="eyeColor" id="eyeColor">
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="bio">bio </label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+
+      <!--Hidden type do not render on the web browser but this is send to the backend when the form is submitted-->
+      <div>
+        <input type="hidden" id="hidden" name="hi" />
+      </div>
+
+      <!--Disabled in input tag do not allow the user to edit the data but allow to see the data present there-->
+      <div>
+        <label>disabled: </label>
+        <input type="text" value="Aditya Saini" disabled />
+      </div>
+
+      <div>
+        <label for="file">Upload File: </label>
+        <input type="file" accept=".png,.jpeg" />
+      </div>
+
+      <div>
+        <label for="telephone">Contact Number:</label>
+        <input type="tel" id="telephone" />
+      </div>
+
+      <div>
+        <label for="url">URL</label>
+        <input type="url" id="url" />
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
