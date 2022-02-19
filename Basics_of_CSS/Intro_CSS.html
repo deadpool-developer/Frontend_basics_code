@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction To CSS</title>
+    <style>
+      #internal {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Inline CSS has top_most priority</h1>
+    <h2>Internal CSS has second_most priority</h2>
+    <h3>External CSS has last priority</h3>
+    <hr />
+
+    <p style="color: red">Inline CSS is used for me</p>
+    <p id="internal">Internal CSS is used for me</p>
+    <p id="external">External CSS is used for me</p>
+    <hr />
+
+    <p>
+      <b
+        >For the external CSS the link tag is always placed above the body and
+        not in the head (we can put it on the head also) <br />But the user is
+        visiting our website for the content and not for the style. <br />The
+        HTML reads the page line-wise so when the link placed inside the head
+        tag the html will read the external CSS first and data after that so if
+        the user with the low internet bandwidth visits the webiste he can see
+        the content.
+      </b>
+    </p>
+    <p>But if we have to make our website for the designers than we have to put the link tag inside the head.</p>
+    <img src="../Basics_of_html/images/Api_calls_in_external_CSS.png" widhth="800" height="500" alt="image"/>
+    <link rel="stylesheet" href="./Intro_CSS.css" />
+  </body>
+</html>
