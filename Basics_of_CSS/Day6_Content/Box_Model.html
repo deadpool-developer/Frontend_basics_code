@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            margin-left: 30px;
+            padding-left: 20px ;
+        }
+        India {
+            margin-right:20px;
+            border: dashed;
+        }
+        India state{
+            padding-right:10px;
+        }
+        Pakistan{
+            border: solid;
+        }
+
+        /* shorthand for padding ,margin */
+        h2{
+            /* padding: top right bottom left
+            margin: top right bottom left
+            border: width style color */
+            padding: 10px 30px 5px 25px;
+            margin: 20px 10px 32px 43px;
+            border: 2px solid red;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--BOX-MODEL-->
+    <p>Each and every element in HTML is a box which is inside the Padding > Border > Margin</p>
+    <p>Margin & Padding is for the spacing purposes outside the content</p> <hr>
+
+    <h1>Tester</h1> <hr>
+    <br><br><br>
+
+    <India>
+        <state>Punjab</state>
+        <state>Gujarat</state>
+    </India>
+    <Pakistan>
+        Pakistan
+    </Pakistan>
+
+    <h2>I am Using the shorthand properties</h2> <hr><br><br>
+
+    <p style="direction: rtl; font-family: fantasy;">I am using Direction property</p><hr><br><br>
+
+    <p style="letter-spacing: 5px;">I am using Letter spacing property</p><hr><br><br>
+    <p style="text-decoration: line-through;">I am using text decoration property</p><hr><br><br>
+    <p style="text-shadow: 2px 2px 5px red;">I am using text shadow property</p><hr><br><br>
+    <!-- text-shadow: top left,right bottom color; -->
+    <p style="box-shadow: 2px 4px 5px red;">I am Using box shadow property</p><hr><br><br>
+
+    <!-- ENDS HERE  -->
+</body>
+</html>

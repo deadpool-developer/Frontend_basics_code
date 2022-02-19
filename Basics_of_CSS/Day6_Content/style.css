@@ -1,0 +1,50 @@
+/* DIFFERENT WAYS TO ADD COLOR IN OUR HTML STARTS HERE */
+.color-name {
+  color: red;
+}
+
+.color-rgb {
+  color: rgb(70, 25, 112);
+}
+
+.color-rgba {
+  color: rgba(40%, 60%, 75%, 1);
+  /* rgba(red,green,blue,opacity(0 to 1)) */
+}
+
+.color-hsl {
+  color: hsl(9, 100%, 64%);
+}
+/*ENDS HERE */
+
+/* IF WE WANT TO APPLY CSS TO ANY CHILD INSIDE THE PARTICULAR PARENT */
+p {
+  color: brown;
+  /* This colors all the content inside all the p tag present in the HTML page  */
+}
+
+nav p {
+  color: rgb(16, 7, 63);
+  /* Now we have target the particular parent inside which the p tag is present */
+}
+
+footer p {
+  color: chocolate;
+}
+
+/* ENDS HERE  */
+
+/* TO SET THE BACKGROUND IMAGE USING CSS PROPERTY */
+
+body {
+  /* background-image: url("../../Basics_of_html/images/svgimg.svg"); /*It is getting repeated*/
+  /* background-repeat: no-repeat;  /*This avoid the repeatition of the image in the HTML*/
+  /* background-position: right top; */
+  background: #fff url("../../Basics_of_html/images/svgimg.svg") no-repeat right top;
+  /* This is how we use the shorthand property in the background property */
+  /* background-size: cover; */
+  opacity: 0.6;
+  background-attachment: fixed;
+}
+
+/* ENDS HERE  */
