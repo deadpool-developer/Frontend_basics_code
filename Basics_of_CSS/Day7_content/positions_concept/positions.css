@@ -1,0 +1,35 @@
+/* positon: absolute property */
+.div2{
+    color: red;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 40px;
+    bottom: 10px;
+}
+/* ENDS HERE  */
+
+/* postion: relative property */
+
+.relative{
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+}
+.relative2{
+   position: absolute;
+    top: 120px;
+    left: 30px;
+    right: 40px;
+    bottom: 10px;
+}
+
+/* ENDS HERE */
+
+/* position fixed */
+/* It gets fixed at the top of the page when the scrolling is done  */
+.fixed{
+    position: fixed;
+}
+
+/* ENDS HERE  */

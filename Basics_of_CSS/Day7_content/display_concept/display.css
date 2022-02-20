@@ -1,0 +1,42 @@
+/* This makes the element inline -> one after another , but do not allow to use width ,height,margin,padding properties*/
+nav div {
+  display: inline;
+}
+
+/* This makes element inline and allow to use height ,width,padding,margin */
+p {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+/* Display,visibility,opacity use case  */
+#slide-show {
+  /* This make the item disappear and the browser treats its code as a commented code  */
+  display: none;
+  /* The item is not visible but the space is occupied by that item  */
+  visibility: hidden;
+  /* This is same as visibility:hidden;  */
+  opacity: 0;
+}
+
+/* ENDS HERE  */
+
+/* Table-cell , table, list-item */
+#adi {
+  /* display: table-cell; */
+display: table-row;
+  /* display: list-item; */
+}
+
+#ary {
+  /* display: table-cell; */
+display: table-row;
+  /* display: list-item; */
+}
+
+#dhr {
+  /* display: table-cell; */
+  display: table-row;
+  /* display: list-item; */
+}
