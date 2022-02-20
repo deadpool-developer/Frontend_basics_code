@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is the way you must write your jobs</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <button onclick="personName()">Click Me</button>
+    <script>
+
+      function personName(){
+          var person = { firstName: "Aditya", lastName: "Saini" };
+      var txt = "";
+
+      for(var x in person) {
+          txt += person[x] + " ";
+      }
+      document.getElementById("app").innerHTML = txt;
+      console.log(txt)
+      }
+
+      /**
+       * Click of button
+       *        - Attach a click event to button
+       *        - Create a function
+       *        - Call it inside event
+       * Full Name of person inside id app
+       *        - Get that div with that id app
+       *        - Inside that div put the name
+       *            - Use a loop to get the values
+       *            - Create a string of values with space in between
+       *                - var with empty string (txt)
+       *                - values from loop I have to put in the above string
+       *                - give this string to innerHTML
+       */
+    </script>
+  </body>
+</html>

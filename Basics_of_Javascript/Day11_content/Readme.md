@@ -31,4 +31,23 @@
     * var can store anything -> char, string, number, float ,function, object ,etc.
 
 ### loops in javascript
-    *
+    * To repeat a procedure again and again.
+    * for(var x in ___){}
+
+### Always seperate the jobs when writing code
+    * To print the name with name onclick of the button.
+    
+      /**
+       * Click of button
+       *        - Attach a click event to button
+       *        - Create a function
+       *        - Call it inside event
+       * Full Name of person inside id app
+       *        - Get that div with that id app
+       *        - Inside that div put the name
+       *            - Use a loop to get the values
+       *            - Create a string of values with space in between
+       *                - var with empty string (txt)
+       *                - values from loop I have to put in the above string
+       *                - give this string to innerHTML
+       */
