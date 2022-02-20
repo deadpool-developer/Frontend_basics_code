@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Javascript</title>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="app2"></div>
+    <div id="app3"></div>
+    <!-- EVENTS IN JAVASCRIP T -->
+    <button onclick="onLoad()">Click</button>
+    <button onmouseenter="onLoad()">Click</button>
+    <button ondblclick="onLoad()">Click</button>
+    <button onmouseleave="onLoad()">Click</button>
+
+    <!-- LEARN MORE EVENTS FROM MDN -->
+
+    <!-- INLINE JAVASCRIPT  -->
+    <button onclick="document.getElementById('app3').innerHTML = 'I am inline javascript'">Click me</button>
+
+
+    <script>
+        //To traverse in the object with the dot(.)
+        function objectTraverse() {
+            object = {a:{b:{c:1}}}
+            object.a.b.c            // this will print 1 as an output -> whenever we have curlu opening braces we use dot(.)
+        }
+
+        //TO CALL A FUNCTION
+        function functionCall() {
+            object = {a:{b:{c: function c() {}}}};
+            object.a.b.c()       //TO CALL A FUNCTION WE CALL IT WITH ITS NAME ()
+        }
+
+
+        //TO GET THE DIV ELEMENT HAVING AN ID OR CLASS
+        function getElement(){
+            document.getElementById("app");
+        }
+
+        //TO MANIPULATE THE HTML WITH THE HELP OF JAVASCRIPT
+        document.getElementById("app").innerHTML ="Hello I was called by the javascript without using the events";
+
+        //TO MANIPULATE THE HTML WITH THE HELP OF FUNCTIONS IN THE JAVASCRIPT
+        function onLoad(){
+            document.getElementById("app2").innerHTML = "Hello I was called by using the event";
+        }
+    </script>
+</body>
+</html>
